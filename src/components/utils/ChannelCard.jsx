@@ -4,6 +4,7 @@ import { demoProfilePicture } from "../../utils/constants";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 
 const ChannelCard = ({ channel, marginTop }) => {
+  if (!channel) return "Loading ...";
   return (
     <Box
       sx={{
